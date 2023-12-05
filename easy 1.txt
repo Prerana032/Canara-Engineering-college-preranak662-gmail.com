@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    // Defining the string
+    char String[] = "Hello World";
+
+    int length = 0;                 
+    int i = strlen(String) - 1; // Start from the last character index
+
+    while (i >= 0 && inputString[i] == ' ') {
+        i--; 
+    }
+
+    // Count the characters of the last word
+    while (i >= 0 && String[i] != ' ') {
+        length++;  // Increment the length for each non-space character
+        i--;     
+    }
+
+    // Print the length of the last word
+    printf("Length of the last word: %d\n", length);
+
+    return 0;
+}
